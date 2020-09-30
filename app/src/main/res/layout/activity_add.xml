@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.py7.productoschacpa.AddActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="270dp"
+        android:layout_height="225dp"
+        android:layout_marginLeft="80dp"
+        app:srcCompat="@drawable/food" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/txID_Add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/txNombreProducto"
+            android:layout_width="215dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="85dp"
+            android:background="@drawable/custom_input"
+            android:drawableLeft="@drawable/ic_fastfod"
+            android:drawablePadding="8dp"
+            android:hint="Nombre Producto"
+            android:paddingStart="8dp" />
+
+        <EditText
+            android:id="@+id/txPrecio"
+            android:layout_width="215dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_input"
+            android:drawableLeft="@drawable/ic_dollar"
+            android:drawablePadding="8dp"
+            android:hint="Precio"
+            android:inputType="numberDecimal"
+            android:paddingStart="8dp"
+            android:scrollbars="vertical" />
+
+        <EditText
+            android:id="@+id/txCantidad"
+            android:layout_width="215dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_input"
+            android:drawableLeft="@drawable/ic_cantidad"
+            android:drawablePadding="8dp"
+            android:hint="Cantidad"
+            android:inputType="number"
+            android:paddingStart="8dp"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/button_registrar"
+            android:layout_width="215dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_button"
+            android:text="Registrar Producto"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
